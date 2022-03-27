@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pic">
+        <img src="assets/forest.jpg" alt="Login pic">
+        <footer>Photo by Michael Krahn</footer>
+        <div class="sidebar">
+            <img src="assets/odin.png" alt="odin logo">SIGN UP FORM
+        </div>
+    </div>
+    <div class="container">
+        <p>This is not a real online service! You know you need something like this in your real life to help you
+            realise your deepest dream. Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.
+        </p>
+        <form autocomplete="off">
+            <div class="main">
+                <p class="heading">LETS DO THIS!</p>
+                <div class="info">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" pattern="([a-zA-Z]+)" required>
+                </div>
+                <div class="info">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" pattern="([a-zA-Z]+)" required>
+                </div>
+                <div class="info">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="info">
+                    <label for="phone_num">Phone Number</label>
+                    <input type="tel" id="phone_num" name="phone_num" required>
+                </div>
+                <div class="info">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="6" required title="Enter your password minimum 6 characters">
+                </div>
+                <div class="info">
+                    <label for="confirm_pwd">Confirm Password</label>
+                    <input type="password" id="confirm_pwd" name="confirm_pwd" required>
+                    <p id="errMsg">Password Does not Match</p>
+                </div>
+            </div>
+            <button type="submit" id="submit">Create Account</button>
+            <p>Already have an account? <a href="" class="login">Log in</a></p>
+        </form>
+    </div>
+    <script>
+        document.getElementById("confirm_pwd").onkeyup = function () {
+            let x = document.getElementById("confirm_pwd");
+            let y = document.getElementById("password");
+            if (x.value == y.value) {
+                x.classList.remove("error")
+                document.getElementById("errMsg").style.opacity = 0;
+            } else {
+                x.classList.add("error")  
+                document.getElementById("errMsg").style.opacity = 1;
+            }
+        }
+        document.getElementById("password").onkeyup = function () {
+            let x = document.getElementById("confirm_pwd");
+            let y = document.getElementById("password");
+            if (x.value == y.value) {
+                x.classList.remove("error")
+                document.getElementById("errMsg").style.opacity = 0;
+            } else {
+                x.classList.add("error")  
+                document.getElementById("errMsg").style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

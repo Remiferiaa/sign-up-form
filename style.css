@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "customFont";
+    src: url(assets/RedHatMono_wght.ttf)
+}
+
+:root {
+    font-size: 18px; 
+}
+
+body {
+    display: flex;
+    margin: 0px; 
+}
+
+.pic {
+    display: flex;
+    position: relative;
+}
+
+img {
+    height: 100vh;
+    width: 40vw;
+}
+
+footer {
+    position:absolute;
+    font-family: "customFont";
+    color: white;
+    top: 97vh;
+    left: 23vw;
+    font-size: 2vh;    
+}
+
+.sidebar {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    top: 40vh;
+    left: 0;
+    right:0;
+    font-family: "customFont";
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sidebar img {
+    width: 5vw;
+    height: 12vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(87, 117, 124);
+    justify-content: center;
+    width: 60vw;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.heading {
+    width: 60vw;
+    margin-bottom: 0px;
+    margin-top: 18px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+}
+
+.info, p ,button {
+    margin: 22px 36px;
+    font-family: "customFont";
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+button {
+    margin-bottom: 0px;
+    background-color: purple;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#errMsg {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+input:focus {
+    border: 3px solid rgb(82, 129, 160);
+    filter: drop-shadow(4px 4px 0.1rem gray)
+}
