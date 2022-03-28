@@ -78,6 +78,7 @@ footer {
 
 input {
     width: 200px;
+    height: 20px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 3px;
@@ -120,5 +121,4 @@ input:focus {
     border: 3px solid rgb(82, 129, 160);
     filter: drop-shadow(4px 4px 0.1rem gray)
 }
-
 
