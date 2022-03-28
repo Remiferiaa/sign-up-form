@@ -5,13 +5,11 @@
 
 :root {
     font-size: 18px; 
-    
 }
 
 body {
     display: flex;
     margin: 0px; 
-    
 }
 
 .pic {
@@ -80,7 +78,6 @@ footer {
 
 input {
     width: 200px;
-    height: 20px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 3px;
@@ -122,4 +119,34 @@ a {
 input:focus {
     border: 3px solid rgb(82, 129, 160);
     filter: drop-shadow(4px 4px 0.1rem gray)
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic {
+        height: 40vh;
+    }
+
+    img {
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .sidebar {
+        top : 20%
+    }
+
+    .container {
+        width: auto;
+    }
+
+    p, label {
+        font-size: 0.8rem;
+    }   
 }
