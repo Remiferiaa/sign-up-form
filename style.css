@@ -122,31 +122,3 @@ input:focus {
 }
 
 
-
-@media screen and (max-width: 750px) {
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .pic {
-        height: 40vh;
-    }
-
-    img {
-        width: 100vw;
-        object-fit: cover;
-    }
-
-    .sidebar {
-        top : 20%
-    }
-
-    .container {
-        width: auto;
-    }
-
-    p, label {
-        font-size: 0.8rem;
-    }   
-}
